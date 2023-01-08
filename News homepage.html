@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="stylesheet" href="./News homepage_files/style.css">
+  <title> News homepage</title>
+</head>
+<body>
+  <div class="Part1">
+    <div class="content">
+      <img src="./News homepage_files/logo.svg">
+      <ul class="a1">
+        <li>Home</li>
+        <li>New</li>
+        <li>Popular</li>
+        <li>Trending</li>
+        <li>Categories</li>
+      </ul>
+  </div>
+  <div class="Part2">
+    <div class="info">
+      <div class="top">
+        <div class="t1">
+          <img class="desk" src="./News homepage_files/image-web-3-desktop.jpg">
+          <img class="mob" src="./News homepage_files/image-web-3-mobile.jpg">
+          <div class="text">
+            <div class="heading">
+              <h1>The Bright Future of Web 3.0?</h1>
+            </div>
+            <div class="a1">
+              <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
+                But is it really fulfilling its promise?</p>
+              <button>READ MORE</button>
+            </div>
+          </div>
+        </div>
+        <div class="t2">
+          <h2>New</h2>
+          <div class="text">
+            <h3><b>Hydrogen VS Electric Cars</b></h3>
+            <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+          </div>
+          <div class="text">
+            <h3><b>The Downsides of AI Artistry</b></h3>
+            <p>What are the possible adverse effects of on-demand AI image generation?</p>
+          </div>
+          <div class="text">
+            <h3><b>Is VC Funding Drying Up?</b></h3>
+            <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="down">
+
+
+        <div class="B">
+          <img src="./News homepage_files/image-retro-pcs.jpg">
+          <div class="text">
+            <span>01</span>
+            <h4>Reviving Retro PCs</h4>
+            <p>What happens when old PCs are given modern upgrades?</p>
+          </div>
+        </div>
+        <div class="B">
+          <img src="./News homepage_files/image-top-laptops.jpg">
+          <div class="text">
+            <span>02</span>
+            <h4>Top 10 Laptops of 2022</h4>
+            <p>Our best picks for various needs and budgets.</p>
+          </div>
+        </div>
+        <div class="B">
+          <img src="./News homepage_files/image-gaming-growth.jpg">
+          <div class="text">
+            <span>03</span>
+            <h4>The Growth of Gaming</h4>
+            <p>How the pandemic has sparked fresh opportunities.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</div></body></html>
