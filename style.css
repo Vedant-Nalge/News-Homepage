@@ -1,0 +1,242 @@
+* { padding: 0;
+    margin: 0;
+}
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    width: 100%;
+    overflow-x: hidden; 
+    display: flex;
+    align-items: center;
+    justify-content: normal;
+    min-height:fit-content;
+    flex-direction: column;
+    background-color: hsl(36, 100%, 99%);
+}
+
+li {
+    list-style: none;
+}
+
+
+.Part1  {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 48px 0;
+}
+
+.content ul {
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content ul li {
+    color: hsl(236, 13%, 42%);
+    position: relative;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.content ul li:hover {
+    color: hsl(5, 85%, 63%);
+}
+
+
+.content ul li:hover::after {
+    width: 100%;
+}
+
+.Part2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+ .top {
+    width: 100%;
+    display: grid;
+    grid-template-columns: (1fr 1fr 1fr);
+    grid-template-rows: 100%;
+    gap: 32px;
+    justify-items: center;
+    align-items: start;
+    overflow: hidden;
+}
+
+.t1 {
+    grid-column: 1 / span 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+ .t1 img {
+    width: 100%;
+}
+
+.t1 .text {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 32px;
+}
+
+.t1 .text .heading  {
+    width: 48%;
+}
+
+.t1 .text .heading h1 {
+    font-weight: 800;
+    font-size: 3.5em;
+    color: rgb(0, 0, 26);
+    line-height: 1em;
+}
+
+.t1 .text .a1 {
+    width: 48%;
+}
+
+.t1 .text .a1 p {
+    font-size: 15px;
+    color: hsl(236, 13%, 42%);
+    line-height: 28px;
+    margin-bottom: 32px;
+    width: 90%;
+}
+.t1 .text .a1 button {
+    border: none;
+    background-color: hsl(5, 85%, 63%);
+    color: hsl(36, 100%, 99%);
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    padding: 16px 32px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+ .t1 .text .a1 button:hover {
+    background-color: hsl(240, 100%, 5%);
+}
+
+.mob {
+    display: none;
+}
+
+.hide {
+    display: none !important;
+}
+.t2 {
+    grid-column: 3 / span 1;
+    grid-row: 1 / span 1;
+    background-color: hsl(240, 100%, 5%);
+    color: hsl(36, 100%, 99%);
+}
+
+ .t2 h2 {
+    color: hsl(35, 77%, 62%);
+    margin: 32px;
+    font-size: 30px;
+}
+
+.t2 .text {
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.t2 .text:not(:nth-of-type(3)) {
+    border-bottom: 1px solid hsl(236, 13%, 42%);
+}
+
+.t2 .text p {
+    font-size: 14px;
+    color: hsl(233, 8%, 79%);
+    line-height: 25px;
+    padding-bottom: 30px;
+}
+
+
+ .down {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    gap: 30px;
+    justify-items: center;
+    align-items: start;
+    overflow: hidden;
+    margin: 32px 0;
+}
+
+ .B {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.B img {
+    width: 40%;
+}
+
+ .B .text {
+    margin-left: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.B .text span {
+    color: hsl(233, 8%, 79%);
+    font-size: 2em;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.B .text h4 {
+    color: hsl(240, 100%, 5%);
+    font-weight: 800;
+    margin-bottom: 16px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+  .B .text h4:hover {
+    color: hsl(5, 85%, 63%);
+}
+
+ .B .text p {
+    font-size: 15px;
+    color: hsl(236, 13%, 42%);
+    line-height: 20px;
+}
+
