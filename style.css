@@ -18,7 +18,13 @@ body {
 li {
     list-style: none;
 }
+.mob {
+    display: none;
+}
 
+.hide {
+    display: none !important;
+}
 
 .Part1  {
     
@@ -352,7 +358,7 @@ li {
         transition: 0.2s;
     }
 
-    .collapse {
+    .contents {
         width: 0% !important;
     }
 
