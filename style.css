@@ -369,11 +369,11 @@ li {
                 display: flex;
                 flex-direction: column;
                 align-items: flex-start;
-                justify-content: right;
+                justify-content: center;
                 transition: 0.2s;
             }
         
-            .close {
+            .cl {
                 width: 0% !important;
             }
         
