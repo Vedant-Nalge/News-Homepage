@@ -2,6 +2,7 @@
     margin: 0;
 }
 
+
 body {
     font-family: 'Inter', sans-serif;
     width: 100%;
@@ -20,6 +21,7 @@ li {
 
 
 .Part1  {
+    
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -27,6 +29,7 @@ li {
 }
 
 .content {
+
     width: 80%;
     display: flex;
     align-items: center;
@@ -36,6 +39,7 @@ li {
 }
 
 .content ul {
+    order: 2;
     width: 40%;
     display: flex;
     flex-direction: row;
@@ -180,6 +184,7 @@ li {
 }
 
 
+
  .down {
     width: 100%;
     display: grid;
@@ -233,11 +238,11 @@ li {
  .B .text p {
     font-size: 15px;
     color: hsl(236, 13%, 42%);
-    line-height: 20px;
-}
- @media (max-width: 767px) {
+    line-height: 20px;}
+
+    @media (max-width: 600px) {
         html,body{
-            overflow-x: hidden;
+            overflow-x: auto;
         }
     
         .top {
@@ -275,7 +280,7 @@ li {
             gap: 80px;
             justify-items: center;
             align-items: start;
-            overflow: hidden;
+            overflow: auto;
         }
     
          .t1 {
@@ -327,8 +332,56 @@ li {
             gap: 32px;
             justify-items: center;
             align-items: start;
-            overflow: hidden;
+            overflow: auto;
             margin: 50px 0;
             margin-top: 0;
         }
+    }
+    .contents {
+        position: fixed;
+        background-color: hsl(36, 100%, 99%);
+        z-index: 11;
+        width: 70%;
+        height: 100vh;
+        top: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        transition: 0.2s;
+    }
+
+    .collapse {
+        width: 0% !important;
+    }
+
+    .contents ul {
+        margin-left: 2rem;
+        flex-basis: 60%;
+    }
+
+    .contents ul li {
+        font-size: 1.5em;
+        font-weight: 700;
+        margin-bottom: 2rem;
+    }
+
+    .contents ul li:hover {
+        color: hsl(5, 85%, 63%);
+    }
+    .menu {
+        z-index: 12;
+    }
+
+    .hide {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0,0,0,0.5);
+        z-index: 2;
     }
